@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/Nabil19911/Frontend-Mentor-Four-card-feature-section)
+- Live Site URL: [Live site](https://nabil19911.github.io/Frontend-Mentor-Four-card-feature-section/)
 
 ## My process
 
