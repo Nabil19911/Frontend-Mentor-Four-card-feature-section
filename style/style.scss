@@ -1,0 +1,108 @@
+@import "./reset";
+@import "./variables";
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background: $VeryLightGray;
+}
+h1 {
+  color: $VeryDarkBlue;
+}
+p {
+  color: $GrayishBlue;
+}
+main {
+  width: 90%;
+  min-width: 338px;
+  max-width: 338px;
+  margin: auto;
+  .#{&}__header {
+    margin: 75px 0;
+    text-align: center;
+    h1 {
+      font-weight: map-get($fontWieght, normal);
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      span {
+        font-weight: map-get($fontWieght, bold);
+      }
+      @include ipad {
+        font-size: 2rem;
+      }
+    }
+    p {
+      font-size: 1rem;
+    }
+    @include ipad {
+      margin: 50px auto;
+      max-width: 450px;
+    }
+  }
+  .cards {
+    margin-top: 25px;
+    .card {
+      width: 100%;
+      height: 250px;
+      background: white;
+      margin-bottom: 10%;
+      border-radius: 6px;
+      box-shadow: 5px 1px 10px -5px $GrayishBlue,
+        -5px -5px 10px -5px $GrayishBlue;
+      &__header {
+        padding: 25px;
+      }
+      &__image-wrapper {
+        padding: 25px;
+        transform: translateX(210px);
+        position: absolute;
+      }
+      @include ipad {
+        max-width: 320px;
+      }
+      @include bigScreen {
+        max-width: 338px;
+      }
+    }
+    & .card:nth-child(1) {
+      border-top: 5px solid $Cyan;
+      @include bigScreen {
+        // position: absolute;
+      }
+    }
+    & .card:nth-child(2) {
+      border-top: 5px solid $Red;
+      @include bigScreen {
+        // position: absolute;
+        // transform: translate(440px, 140px);
+      }
+    }
+    & .card:nth-child(3) {
+      border-top: 5px solid $Orange;
+      @include bigScreen {
+        // position: absolute;
+      }
+    }
+    & .card:nth-child(4) {
+      border-top: 5px solid $Blue;
+      @include bigScreen {
+        // position: absolute;
+      }
+    }
+    @include ipad {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 700px;
+      margin: auto;
+    }
+    @include bigScreen {
+      display: flex;
+      max-width: 100vw;
+    }
+  }
+  @include ipad {
+    max-width: 100vw;
+  }
+}
