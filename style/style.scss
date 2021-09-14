@@ -51,8 +51,8 @@ main {
       background: white;
       margin-bottom: 10%;
       border-radius: 6px;
-      box-shadow: 5px 1px 10px -5px $GrayishBlue,
-        -5px -5px 10px -5px $GrayishBlue;
+      box-shadow: 1px 10px 20px -5px $GrayishBlue,
+        -1px -1px 10px -5px $GrayishBlue;
       &__header {
         padding: 25px;
       }

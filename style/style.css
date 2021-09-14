@@ -76,8 +76,8 @@ main .cards .card {
   background: white;
   margin-bottom: 10%;
   border-radius: 6px;
-  -webkit-box-shadow: 5px 1px 10px -5px #a3a5ae, -5px -5px 10px -5px #a3a5ae;
-          box-shadow: 5px 1px 10px -5px #a3a5ae, -5px -5px 10px -5px #a3a5ae;
+  -webkit-box-shadow: 1px 10px 20px -5px #a3a5ae, -1px -1px 10px -5px #a3a5ae;
+          box-shadow: 1px 10px 20px -5px #a3a5ae, -1px -1px 10px -5px #a3a5ae;
 }
 
 main .cards .card__header {
