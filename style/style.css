@@ -12,7 +12,8 @@ body {
   background: #fafafa;
 }
 
-h1 {
+h1,
+h2 {
   color: #4c4e61;
 }
 
