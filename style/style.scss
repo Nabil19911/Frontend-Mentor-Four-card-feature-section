@@ -5,6 +5,12 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   background: $VeryLightGray;
+  @include bigScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 }
 h1,
 h2 {
@@ -72,6 +78,7 @@ main {
     & .card:nth-child(1) {
       border-top: 5px solid $Cyan;
       @include bigScreen {
+        // transform: translateY(50%);
         position: absolute;
         left: 70px;
         bottom: 145px;
@@ -86,24 +93,34 @@ main {
     & .card:nth-child(4) {
       border-top: 5px solid $Blue;
       @include bigScreen {
+        // transform: translateY(-50%);
         position: absolute;
         right: 70px;
         bottom: 145px;
       }
     }
     @include ipad {
-      display: grid;
-      grid-template-columns: auto auto;
-      justify-content: space-between;
-      align-items: center;
+      // display: grid;
+      // grid-template-columns: auto auto;
+      // justify-content: space-between;
+      // align-items: center;
+      // max-width: 700px;
+      // margin: auto;
+      display: flex;
+      flex-direction: row;
       max-width: 700px;
       margin: auto;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
     @include bigScreen {
       display: flex;
       flex-direction: column;
+      align-items: center;
       position: relative;
       max-width: 1215px;
+      // margin: auto;
+      // max-width: 1120px;
     }
   }
   @include ipad {
